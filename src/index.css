@@ -1,0 +1,254 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f6fa;
+    color: #222;
+}
+
+/* Main Heading */
+
+h1 {
+    text-align: center;
+    margin: 0;
+    padding: 25px;
+    background: white;
+    color: #2563eb;
+}
+
+/* Navbar */
+
+.navbar {
+    width: 100%;
+    padding: 18px 40px;
+    background: white;
+    border-bottom: 1px solid #ddd;
+
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    color: #2563eb;
+}
+
+/* Dashboard */
+
+.dashboard {
+    width: 700px;
+    max-width: 90%;
+    margin: 50px auto;
+    padding: 50px;
+
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+
+    text-align: center;
+}
+
+.dashboard h2 {
+    margin-top: 0;
+    margin-bottom: 35px;
+    font-size: 28px;
+}
+
+.dashboard p {
+    margin: 15px auto;
+    padding: 15px;
+    width: 350px;
+    max-width: 100%;
+
+    background: #f5f6fa;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+/* Student Form */
+
+.student-form {
+    width: 450px;
+    margin: 40px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.student-form h2 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.student-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.student-form input {
+    padding: 11px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+}
+
+.student-form input:focus {
+    border-color: #2563eb;
+}
+
+.student-form button {
+    margin-top: 8px;
+    padding: 11px;
+    border: none;
+    border-radius: 6px;
+    background: #2563eb;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.student-form button:hover {
+    background: #1d4ed8;
+}
+
+/* Student List */
+
+.student-card {
+    width: 800px;
+    max-width: 90%;
+    margin: 40px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.student-card h2 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.student-card>input {
+    width: 60%;
+    margin-right: 10px;
+}
+
+.student-card select {
+    width: 180px;
+}
+
+.student-card input,
+.student-card select {
+    padding: 11px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+}
+
+.student-card input:focus,
+.student-card select:focus {
+    border-color: #2563eb;
+}
+
+.student-card>div {
+    margin-top: 20px;
+    padding: 18px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fafafa;
+}
+
+.student-card p {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 12px 5px;
+    font-size: 16px;
+}
+
+.student-card button {
+    margin-top: 12px;
+    margin-right: 8px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+ 
+.student-card>div {
+    text-align: center;
+}
+
+.student-card button:first-of-type {
+    background: #dc2626;
+}
+
+.student-card button:first-of-type:hover {
+    background: #b91c1c;
+}
+
+.student-card button:last-of-type {
+    background: #2563eb;
+}
+
+.student-card button:last-of-type:hover {
+    background: #1d4ed8;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 24px;
+        padding: 20px;
+    }
+
+    .navbar {
+        padding: 15px;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .student-form {
+        width: 90%;
+        margin: 25px auto;
+    }
+
+    .student-card {
+        width: 90%;
+        padding: 18px;
+    }
+
+    .student-card>input {
+        width: 100%;
+        margin: 0 0 10px;
+    }
+
+    .student-card select {
+        width: 100%;
+    }
+
+    .dashboard>div {
+        gap: 15px;
+    }
+
+    .dashboard>div>div {
+        min-width: 140px;
+    }
+}
